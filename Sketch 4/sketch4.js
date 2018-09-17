@@ -9,7 +9,8 @@ function draw(){
 	translate(width/2, height/2);
 
 	for(var n = 0; n < 30; n++){
-
+		//Switches between different colour fills and starting with
+		//a different number of seperate groups of shapes the 3+ and 10+ changes the initial grouping formation
 		if(mouseIsPressed){
 			rotate(3+(PI/sqrt(mouseX)));
 			fill(n*20, 100, mouseY);
@@ -25,6 +26,7 @@ function draw(){
 
 }
 
+//A seperate design function to clean up and seperate the code
 function design(){
 	strokeWeight(5);
 	line(30, 20, mouseX, mouseY);
